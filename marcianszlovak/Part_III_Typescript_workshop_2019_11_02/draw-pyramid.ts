@@ -1,4 +1,4 @@
-lineCount = 4;
+let lineCount = 4;
 
 
 for (let i: number = 0; i < lineCount; i++) {
