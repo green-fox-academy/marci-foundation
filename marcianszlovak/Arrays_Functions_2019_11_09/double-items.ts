@@ -9,4 +9,4 @@
 const drinks = ["Gin", "Whiskey", "Wine", "Beer"];
 drinks.forEach(function asder())
 
-console.log(drinks2);
+console.log(drinks);
