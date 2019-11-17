@@ -9,19 +9,17 @@
 //console.log(subint(9, [1, 11, 34, 52, 61]));
 // should print: '[]'
 
-let result: number[] = [];
-
-function subint(number: any, array: any) {
-  result = [];
-  let str: string;
-  let stringNumber: string = number.toString();
-  for (let i = 0; i < array.length; i++) {
-    str = array[i].toString();
-    if (str.substring(0, 1) == stringNumber) {
-      result.push(i);
-    } else if (str.substring(1, 2) == stringNumber) {
-      result.push(i);
+function subint(n: number, array: number[]) {
+  const subint: number[] = [];
+  array.forEach(function(e, i) {
+    if (e.toString().indexOf(n.toString()) > -1) {
+      subint.push(i);
     }
-  }
-  return result;
+  });
+  return subint;
 }
+
+console.log(subint(1, [1, 11, 34, 52, 61]));
+console.log(subint(9, [1, 11, 34, 52, 61]));
+
+export {};
