@@ -22,4 +22,3 @@ function ascendingOrder([]) {
 
 ascendingOrder(randomSzámok);
 console.log(randomSzámok);
-
