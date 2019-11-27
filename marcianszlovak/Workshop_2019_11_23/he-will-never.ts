@@ -3,7 +3,6 @@
 // Your job is to decode the notSoCrypticMessage by using the hashmap as a look up table
 // Assemble the fragments into the out variable
 
-let out: string = "";
 let notSoCrypticMessage: number[] = [
   1,
   12,
@@ -34,10 +33,25 @@ let hashmap = {
   3: "say goodbye "
 };
 
-let organizedList = [...new Set(notSoCrypticMessage)];
+/* let organizedList = [...new Set(notSoCrypticMessage)];
 
 organizedList.sort(function(a, b) {
-  return a - b;
-});
+ return a - b;
+}); */
 
-export{}
+
+ // let output = Object.entries(hashmap).map(([key, value]) => ({ key, value }));
+
+
+console.log(output);
+export {};
+
+notSoCrypticMessage.forEach(function(number) {
+  if (number === hashmap[key]) {
+     
+  console.log(Object.values(hashmap));
+
+} 
+})
+ // if arrayelement = key of object, print value of key but only once
+
