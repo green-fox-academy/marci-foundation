@@ -39,24 +39,17 @@ organizedList.sort(function(a, b) {
  return a - b;
 }); */
 
+// let output = Object.entries(hashmap).map(([key, value]) => ({ key, value }));
 
- // let output = Object.entries(hashmap).map(([key, value]) => ({ key, value }));
+// console.log(output);
 
+/*notSoCrypticMessage.forEach(function(number) {
+  if (number === ) {
+    console.log(Object.values(hashmap));
+  }
+});
+// if arrayelement = key of object, print value of key but only once */
 
-console.log(output);
+const out = notSoCrypticMessage.map(number => hashmap[number]).join("");
+console.log(out);
 export {};
-
-notSoCrypticMessage.forEach(function(number) {
-  if (number === hashmap[key]) {
-     
-  console.log(Object.values(hashmap));
-
-} 
-})
- // if arrayelement = key of object, print value of key but only once
-
-<<<<<<< HEAD
-=======
-export{}
-
->>>>>>> 9a5e80937da4e0729f8926a6796cef827e4c13f0
