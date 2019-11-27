@@ -55,3 +55,8 @@ notSoCrypticMessage.forEach(function(number) {
 })
  // if arrayelement = key of object, print value of key but only once
 
+<<<<<<< HEAD
+=======
+export{}
+
+>>>>>>> 9a5e80937da4e0729f8926a6796cef827e4c13f0
