@@ -18,19 +18,19 @@ let money = {
   },
 
   f2: function minimumSpending(array: any) {
-    let minimum = Math.min(...array);
+    const minimum = Math.min(...array);
     console.log(minimum);
     return minimum;
   },
 
   f3: function maximumSpending(array: any) {
-    let maximum = Math.max(...array);
+    const maximum = Math.max(...array);
     console.log(maximum);
     return maximum;
   },
 
   f4: function average(array: any) {
-    let average = array.reduce((a: number, b: number) => a + b) / array.length;
+    const average = array.reduce((a: number, b: number) => a + b) / array.length;
     console.log(average);
     return average;
   }
