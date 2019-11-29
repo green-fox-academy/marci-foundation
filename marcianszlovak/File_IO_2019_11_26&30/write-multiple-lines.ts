@@ -8,20 +8,21 @@
 // The function should not raise any errors if it could not write the file.
 
 const fs = require("fs");
-// const file = fs.createWriteStream("./macska.txt");
-function fWrite(path: string, word: string, number: string) {
-  let path1 = fs.writeFileSync(path, word);
-  // const write = fs.writeFileSync(word);
-  // const lines = (write.match(/\n/g) || "").length + 1;
-  for (let index = 0; index <= 5; index++) {
-    if ((path1 = "macska.txt")) {
-      fs.writeFileSync(path, word + "\n");
+
+function multipleLines(path: string, word: string, number: number) {
+  try {
+    let line: string = "";
+
+    for (let i: number = 0; number > i; i++) {
+      line = line + (word + "\n");
     }
+
+    fs.writeFileSync(path, line, "utf8");
+  } catch (error) {
+    console.log("THERE IS NO ERROR HERE");
   }
-  return path1;
 }
 
-fWrite("macska.txt", "apple", "5");
+multipleLines("kiscica.txt", "apple", 5);
+
 export {};
- 
-// WORK IN PROGRESS
