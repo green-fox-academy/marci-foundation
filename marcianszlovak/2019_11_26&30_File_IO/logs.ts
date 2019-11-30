@@ -14,5 +14,13 @@ let uniqueIP = fs
   .readFileSync("log.txt")
   .toString()
   .split("\n");
+
+// for each UNIQUE ip log to console
+let filteredArray = uniqueIP.filter(function(item, pos) {
+  return uniqueIP.indexOf(item) === pos;
+});
+
+console.log(filteredArray);
 console.log(uniqueIP);
+
 export {};

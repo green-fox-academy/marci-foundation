@@ -11,34 +11,35 @@ What was the average amount of our spendings? */
 
 const list = [500, 1000, 1250, 175, 800, 120];
 let money = {
-  f1: function spendings(array: any) {
+  spendings: function(array: any) {
     const sum = array.reduce((a: number, b: number) => a + b, 0);
     console.log(sum);
     return sum;
   },
 
-  f2: function minimumSpending(array: any) {
+  minimumSpending: function(array: any) {
     const minimum = Math.min(...array);
     console.log(minimum);
     return minimum;
   },
 
-  f3: function maximumSpending(array: any) {
+  maximumSpending: function(array: any) {
     const maximum = Math.max(...array);
     console.log(maximum);
     return maximum;
   },
 
-  f4: function average(array: any) {
-    const average = array.reduce((a: number, b: number) => a + b) / array.length;
+  average: function(array: any) {
+    const average =
+      array.reduce((a: number, b: number) => a + b) / array.length;
     console.log(average);
     return average;
   }
 };
 
-money.f4([500, 1000, 1250, 175, 800, 120]),
-  money.f2([500, 1000, 1250, 175, 800, 120]),
-  money.f3([500, 1000, 1250, 175, 800, 120]),
-  money.f1([500, 1000, 1250, 175, 800, 120]);
+money.average(list),
+  money.maximumSpending(list),
+  money.spendings(list),
+  money.minimumSpending(list);
 
 export {};
