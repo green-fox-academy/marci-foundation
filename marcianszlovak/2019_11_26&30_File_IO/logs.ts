@@ -4,23 +4,18 @@
 // Write a function that returns the GET / POST request ratio.
 
 const fs = require("fs");
-/*function uniqueIP(address: string) {
-const uniqArray = address.split("/n");
-  const onlyIP = uniqArray.filter("")
-  console.log(onlyIP);
-} */
 
 let uniqueIP = fs
-  .readFileSync("log.txt")
+  .readFileSync("log.txt", "utf-8")
   .toString()
-  .split("\n");
+  //.split("\n");
+let sub = uniqueIP.slice(24, 1820);
 
-// for each UNIQUE ip log to console
-let filteredArray = uniqueIP.filter(function(item, pos) {
-  return uniqueIP.indexOf(item) === pos;
-});
+let ju = uniqueIP.indexOf("32.28.73.45");
+let ja = uniqueIP.indexOf("10.44.71.36");
 
-console.log(filteredArray);
-console.log(uniqueIP);
-
+console.log(ju);
+console.log(ja);
+console.log(sub);
+console.log(typeof uniqueIP);
 export {};
