@@ -1,20 +1,14 @@
 const fs = require("fs");
-let fileRead = fs.readFileSync("duplicated-chars.txt", "utf-8");
 
-function duplicateChars(fileName: string) {
-  let unique = [...new Set(fileName)].sort().join("");
-  // console.log(unique);
-  return unique;
+function doubles(content: string) {
+  let newStr = "";
+  for (let index = 0; index < content.length; index++) {
+    if (index % 2 === 1) {
+      newStr += content[index];
+    }
+  }
+  return newStr;
 }
-
-console.log(duplicateChars("duplicated-chars.txt"));
-
-function tString(path: string, fileName: string) {
-  let asd = fs.readFileSync(path.toString, "utf-8");
-  console.log(asd);
-  return asd;
-}
-
-tString("duplicated-chars.txt", "utf-8");
-
+let noDupes = fs.readFileSync("duplicated-chars.txt", "utf-8");
+console.log(doubles(noDupes));
 export {};
