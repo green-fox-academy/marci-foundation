@@ -5,17 +5,19 @@
 
 const fs = require("fs");
 
-let uniqueIP = fs
+let uniqueIP: string[] = fs
   .readFileSync("log.txt", "utf-8")
   .toString()
-  //.split("\n");
-let sub = uniqueIP.slice(24, 1820);
+  .split("\n");
+let IP: string[] = [];
 
-let ju = uniqueIP.indexOf("32.28.73.45");
-let ja = uniqueIP.indexOf("10.44.71.36");
+uniqueIP.forEach(element => {
+  IP.push(element.slice(27, 38));
+});
 
-console.log(ju);
-console.log(ja);
-console.log(sub);
-console.log(typeof uniqueIP);
+let uniqueIP2: string[] = IP.filter((element: string, index: number) => {
+  return IP.indexOf(element) === index;
+});
+
+console.log(uniqueIP2);
 export {};
