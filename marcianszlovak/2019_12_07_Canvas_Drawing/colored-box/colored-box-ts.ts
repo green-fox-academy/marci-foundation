@@ -7,29 +7,29 @@ ctx.fillRect(0, 0, 100, 100);
 ctx.strokeStyle = "green";
 ctx.beginPath();
 ctx.lineWidth = 10;
-ctx.moveTo(0, 100); // height, width start
-ctx.lineTo(100, 100); // height, width end
+ctx.moveTo(0, 100); 
+ctx.lineTo(100, 100); 
 ctx.stroke();
 
 ctx.strokeStyle = "green";
 ctx.beginPath();
 ctx.lineWidth = 10;
-ctx.moveTo(100, 0); // height, width start
-ctx.lineTo(100, 105); // height, width end
+ctx.moveTo(100, 0); 
+ctx.lineTo(100, 105); 
 ctx.stroke();
 
 ctx.strokeStyle = "green";
 ctx.beginPath();
 ctx.lineWidth = 15;
-ctx.moveTo(0, 0); // height, width start
-ctx.lineTo(0, 105); // height, width end
+ctx.moveTo(0, 0); 
+ctx.lineTo(0, 105); 
 ctx.stroke();
 
 ctx.strokeStyle = "green";
 ctx.beginPath();
 ctx.lineWidth = 15;
-ctx.moveTo(0, 0); // height, width start
-ctx.lineTo(100, 0); // height, width end
+ctx.moveTo(0, 0); 
+ctx.lineTo(100, 0); 
 ctx.stroke();
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 

@@ -4,8 +4,8 @@ const canvas = document.querySelector(".main-canvas") as HTMLCanvasElement;
 const ctx = canvas.getContext("2d");
 ctx.strokeStyle = "red";
 ctx.beginPath();
-ctx.moveTo(0, 200); // height, width start
-ctx.lineTo(600, 200); // height, width end
+ctx.moveTo(0, 200); 
+ctx.lineTo(600, 200); 
 ctx.stroke();
 
 ctx.strokeStyle = "green";
