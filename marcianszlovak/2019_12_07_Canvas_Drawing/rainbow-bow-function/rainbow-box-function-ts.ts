@@ -10,15 +10,18 @@ const ctx = canvas.getContext("2d");
 // and draws a square of that size and color to the center of the canvas.
 // Create a loop that fills the canvas with a rainbow of colored squares.
 
-function coloredSquare(a: number, b: string) {
-  ctx.strokeStyle = b;
-  ctx.strokeRect(300, 200, a, a);
+function drawRbox(squareSize: number) {
+  while (squareSize >= 0) {
+    ctx.fillStyle =
+      "#" + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6);
+    ctx.fillRect(
+      (canvas.width - squareSize) / 2,
+      (canvas.height - squareSize) / 2,
+      squareSize,
+      squareSize
+    );
+    squareSize = squareSize - 30; // 
+  }
 }
-/* ctx.fillStyle = "blue";
-ctx.fillRect(0, 20, canvas.width, canvas.height); */
-
-let colors1 = [...new Array(7)];
-
-colors1.forEach(element => {
-  coloredSquare(40, "green");
-});
+let squareSize = 600;
+drawRbox(squareSize);
