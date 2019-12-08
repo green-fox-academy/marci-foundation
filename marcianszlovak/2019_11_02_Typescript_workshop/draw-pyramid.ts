@@ -23,3 +23,5 @@ for (let i: number = 0; i < lineCount; i++) {
 // *******
 //
 // The pyramid should have as many lines as lineCount is
+
+export {};

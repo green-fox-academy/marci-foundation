@@ -12,3 +12,4 @@ function doubles(content: string) {
 let noDupes = fs.readFileSync("duplicated-chars.txt", "utf-8");
 console.log(doubles(noDupes));
 export {};
+
