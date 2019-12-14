@@ -30,7 +30,7 @@ dominoes.forEach((index, element) => {
   dominoes.forEach((index2, element2) => {
     if (dominoes[element2].values[0] === dominoes2[element].values[1]) {
       // if [*1*, 2] === [3, *1*]
-      dominoes2.push(dominoes[element2]); // add the items from dominoes to dominoes2
+      dominoes2.push(dominoes[element2]);
     }
   });
 });
