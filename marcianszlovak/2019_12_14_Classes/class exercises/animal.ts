@@ -16,8 +16,8 @@ class Animal {
   }
 
   public play() {
-    this.thirst--;
-    this.hunger--;
+    this.thirst++;
+    this.hunger++;
   }
 }
 

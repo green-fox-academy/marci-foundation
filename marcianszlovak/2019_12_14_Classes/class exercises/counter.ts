@@ -8,21 +8,20 @@ also we can reset() the value to the initial value */
 
 class Counter {
   change: number;
-  change1: number;
   constructor(change: number = 0) {
     this.change = change;
   }
   public addOne() {
     return this.change++;
   }
-  public addAny(a: number) {
-    return (this.change = this.change + a);
+  public addAny(change: number = 1): void {
+    this.change += change;
   }
-  public get() {
-    return this.change.toString;
+  public get(): string {
+    return this.change.toString();
   }
   public reset() {
-    return (this.change -= this.change);
+    this.change -= this.change;
   }
 }
 
