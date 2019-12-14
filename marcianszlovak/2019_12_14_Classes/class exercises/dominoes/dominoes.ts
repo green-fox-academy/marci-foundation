@@ -21,12 +21,18 @@ let dominoes = initializeDominoes();
 /** You have the list of Dominoes */
 /** Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides */
 /** eg: [2, 4], [4, 3], [3, 5] ... */
-let dominoArray = [[]];
-dominoes.forEach(element => {
-  dominoArray.push(element.values);
+
+let dominoes2 = [];
+
+dominoes2.push(dominoes[0]); // last item of dominoes2 will be the first item of dominoes
+
+dominoes.forEach((index, element) => {
+  dominoes.forEach((index2, element2) => {
+    if (dominoes[element2].values[0] === dominoes2[element].values[1]) {
+      // if [*1*, 2] === [3, *1*]
+      dominoes2.push(dominoes[element2]); // add the items from dominoes to dominoes2
+    }
+  });
 });
 
-let dominoArray2 = [[]];
-dominoArray2.push(dominoArray[0]);
-
-console.log(dominoArray2);
+console.log(dominoes2);
