@@ -11,7 +11,7 @@ let quote: string = `Hofstadter's Law: It you expect, even when you take into ac
 let search = quote.indexOf("you ");
 let search2 = quote.indexOf(" you");
 console.log(search, search2);
-let completeQuote = 
+let completeQuote =
   quote.slice(0, 20) + " always takes longer than " + quote.slice(21);
 
 console.log(completeQuote);

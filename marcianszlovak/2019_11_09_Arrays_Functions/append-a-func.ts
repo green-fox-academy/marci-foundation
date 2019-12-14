@@ -12,7 +12,8 @@ console.log(typo); */
 
 let typo = "Chinchill";
 function appendAFunc() {
-    typo + "a"
-    return typo;
+  typo + "a";
+  return typo;
 
-console.log(typo);}
+  console.log(typo);
+}
