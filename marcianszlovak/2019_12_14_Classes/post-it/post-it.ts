@@ -11,4 +11,5 @@ export class postIt {
 }
 
 const post1 = new postIt("orange", "blue", "Idea1");
-console.log(post1);
+const post2 = new postIt("pink", "black", "Awesome");
+const post3 = new postIt("yellow", "green", "Supoyb");
