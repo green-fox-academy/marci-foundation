@@ -26,7 +26,7 @@ class Counter {
   }
 }
 
-const number1 = new Counter(20);
+const number1 = new Counter(10);
 number1.addOne();
 console.log(number1);
 number1.addAny(35);
