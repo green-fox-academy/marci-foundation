@@ -26,4 +26,7 @@ dominoes.forEach(element => {
   dominoArray.push(element.values);
 });
 
-console.log(dominoArray);
+let dominoArray2 = [[]];
+dominoArray2.push(dominoArray[0]);
+
+console.log(dominoArray2);
