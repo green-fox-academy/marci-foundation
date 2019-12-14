@@ -9,30 +9,29 @@ also we can reset() the value to the initial value */
 class Counter {
   change: number;
   change1: number;
-  constructor(change: number = 0, change1: number) {
+  constructor(change: number = 0) {
     this.change = change;
-    this.change1 = change1;
   }
   public addOne() {
     return this.change++;
   }
   public addAny(a: number) {
-    return (this.change1 += a);
+    return (this.change = this.change + a);
   }
   public get() {
-    return this.change;
+    return this.change.toString;
   }
   public reset() {
-    let reset = (this.change -= this.change);
-    let resetAll = (reset -= this.change1 -= this.change1);
-    return resetAll;
+    return (this.change -= this.change);
   }
 }
 
-const number1 = new Counter(20, 20);
+const number1 = new Counter(20);
 number1.addOne();
 console.log(number1);
-number1.addAny(10);
+number1.addAny(35);
+console.log(number1);
+number1.get();
 console.log(number1);
 number1.reset();
 console.log(number1);
