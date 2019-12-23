@@ -11,6 +11,11 @@ console.log(numbers);
 for (let i = 0; i < numbers.length; i++) {
   console.log(numbers[i]);
 }
-let matrix = [[0, 1], [2, 3]]; // array inside array
+let matrix = [
+  [0, 1],
+  [2, 3]
+]; // array inside array
 
 console.log(matrix[0][1]);
+
+export {};

@@ -10,6 +10,6 @@ console.log(incrementedNumber + 1);
 
 export {};
 
-const számlista = [1,2,3,4,5];
+const számlista = [1, 2, 3, 4, 5];
 számlista.push(számlista[2]++);
 console.log(számlista[2]);

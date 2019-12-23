@@ -68,3 +68,5 @@ How else can we declare functions?
 */
 
 const add = function kakaó(a: number) {};
+
+export {};

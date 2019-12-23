@@ -8,4 +8,3 @@ let baseNum2 = baseNum.reduce(function(a, b) {
 });
 
 console.log(baseNum2);
-

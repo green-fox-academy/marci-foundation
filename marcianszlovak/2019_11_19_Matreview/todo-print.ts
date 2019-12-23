@@ -14,8 +14,9 @@ console.log(todoText);
 let todoText: string = ' - Buy milk\n'; */
 
 let todoText: string = " - Buy milk\n";
-let dodoText =
-  todoText.concat((" - Download games")  + todoText.concat("  " + "-Diablo"));
+let dodoText = todoText.concat(
+  " - Download games" + todoText.concat("  " + "-Diablo")
+);
 console.log(dodoText);
 
 // TO BE CONTINUED

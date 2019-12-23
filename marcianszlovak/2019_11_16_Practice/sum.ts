@@ -2,4 +2,3 @@
 
 const NumberZ = [1, 2];
 const sum = NumberZ.reduce((a, b) => a + b, 0);
-

@@ -70,8 +70,6 @@ function doubleAdd(a: number, b: number): number {
 
 let result5 = doubleAdd(result4, 2); // nem tudjuk mivel kell visszatérni - return
 
-let sub = function(): any{
-
-} // függvény elnevezése
+let sub = function(): any {}; // függvény elnevezése
 
 export {};
