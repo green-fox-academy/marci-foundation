@@ -14,6 +14,9 @@ class Fleet {
   getThings(): Thing[] {
     return this.things;
   }
+  print() {
+    this.things.forEach(element => {});
+  }
 }
 
 export { Fleet };
