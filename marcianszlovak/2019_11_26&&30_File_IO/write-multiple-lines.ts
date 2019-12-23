@@ -7,7 +7,7 @@
 // into the file and each line should read 'apple'
 // The function should not raise any errors if it could not write the file.
 
-const fs = require("fs");
+import fs from "fs";
 
 function multipleLines(path: string, word: string, number: number) {
   try {

@@ -3,7 +3,7 @@
 // Write a function that returns an array with the unique IP adresses.
 // Write a function that returns the GET / POST request ratio.
 
-const fs = require("fs");
+import fs from "fs";
 
 let uniqueIP: string[] = fs
   .readFileSync("log.txt", "utf-8")

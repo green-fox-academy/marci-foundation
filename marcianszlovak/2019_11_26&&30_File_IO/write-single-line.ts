@@ -4,7 +4,8 @@
 // In case the program is unable to write the file,
 // It should print the following error message: "Unable to write file: my-file.txt"
 
-const fs = require("fs");
+import fs from "fs";
+
 const ERROR_MESSAGE = "Unable to write file: my-file.txt";
 function fileWrite(fileName: string, content: string) {
   const write = fs.writeFileSync(fileName, content);

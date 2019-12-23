@@ -1,5 +1,6 @@
 // Create a method that decrypts reversed-order.txt
-const fs = require("fs");
+import fs from "fs";
+
 function reversedOrder(content: string): string {
   let newStr = "";
   let newArr = content.split("\n");

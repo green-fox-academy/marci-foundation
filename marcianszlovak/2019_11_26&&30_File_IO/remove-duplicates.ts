@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "fs";
 
 function doubles(content: string) {
   let newStr = "";
@@ -12,4 +12,3 @@ function doubles(content: string) {
 let noDupes = fs.readFileSync("duplicated-chars.txt", "utf-8");
 console.log(doubles(noDupes));
 export {};
-

@@ -1,6 +1,6 @@
 // Create a method that decrypts reversed-lines.txt
 
-const fs = require("fs");
+import fs from "fs";
 
 function reverseString(content: string) {
   return [...content].reverse().join("");
