@@ -1,20 +1,20 @@
 class Student {
   public learn() {
-    console.log("The student is learning something new.");
+    console.log("the student is learning something new");
   }
 
-  public question(Teacher) {
+  public question(Teacher: any) {
     Teacher.answer();
   }
 }
 
 class Teacher {
-  public teach(Student) {
+  public teach(Student: any) {
     Student.learn();
   }
 
   public answer() {
-    console.log("The teacher is answering a question.");
+    console.log("the teacher is answering a question");
   }
 }
 
