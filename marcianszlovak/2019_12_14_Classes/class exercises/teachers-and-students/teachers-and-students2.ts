@@ -5,4 +5,4 @@ const student = new Student();
 const teacher = new Teacher();
 
 student.question(teacher);
- // teacher.answer(student);
+teacher.teach(student);
