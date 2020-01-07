@@ -5,7 +5,7 @@ class Station {
     this.gasAmount = gasAmount;
   }
 
-  public refill(Car) {
+  public refill(Car: any) {
     this.gasAmount -= Car.capacity;
     Car.gasAmount = Car.capacity;
   }
