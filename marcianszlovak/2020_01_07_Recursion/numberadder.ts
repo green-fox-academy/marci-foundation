@@ -6,4 +6,4 @@ function addANumber(n: number) {
   }
 }
 
-console.log(addANumber(10));
+console.log(addANumber(7));
