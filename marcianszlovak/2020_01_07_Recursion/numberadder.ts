@@ -7,3 +7,13 @@ function addANumber(n: number) {
 }
 
 console.log(addANumber(7));
+
+// with a for loop
+
+function sumNumbers(n: number) {
+  let sum = 0;
+  for (let index = 1; index <= n; index++) {
+    sum += index;
+  }
+  return sum;
+}
