@@ -4,8 +4,8 @@ export class Aircraft {
   maxAmmo: number;
   baseDamage: number;
   constructor(
-    ammo: number,
-    damage: number,
+    ammo: number = 0,
+    damage: number = 0,
     maxAmmo: number,
     baseDamage: number
   ) {
