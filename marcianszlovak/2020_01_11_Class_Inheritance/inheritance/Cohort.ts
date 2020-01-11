@@ -7,7 +7,7 @@ export class Cohort {
   mentors: Mentor[];
   constructor(name: string) {
     this.name = name;
-    this.students = [];
+    this.students = []; // array so items can be pushed to it with the addStudent and the addMentor class methods
     this.mentors = [];
   }
   addStudent(student: Student) {
