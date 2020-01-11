@@ -18,7 +18,7 @@ export class Cohort {
   }
   info() {
     console.log(
-      "The ${this.name} cohort ${this.students.length} students and ${this.mentors.length} mentors "
+      `The ${this.name} cohort has ${this.students.length} students and ${this.mentors.length} mentors.`
     );
   }
 }

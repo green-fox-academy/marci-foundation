@@ -16,7 +16,7 @@ export class Mentor extends Person {
   }
   introduce() {
     console.log(
-      "Hi, I'm a ${this.name} a ${this.age} year old ${this.gender} ${this.level} mentor."
+      `Hi, I'm a ${this.name} a ${this.age} year old ${this.gender} ${this.level} mentor.`
     );
   }
 }

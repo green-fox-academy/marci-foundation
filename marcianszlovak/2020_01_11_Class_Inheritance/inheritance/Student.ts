@@ -5,8 +5,8 @@ export class Student extends Person {
   skippedDays: number;
   constructor(
     name?: string,
-    gender?: string,
     age?: number,
+    gender?: string,
     previousOrganization: string = "The School of Life"
   ) {
     super(name, age, gender);
@@ -16,9 +16,9 @@ export class Student extends Person {
   getGoal() {
     console.log("My goal is: to be a junior software developer");
   }
-  introduce() {
+  introduce(): void {
     console.log(
-      "Hi, I'm ${this.name} a ${this.age} year old ${this.gender} from ${this.previousOrganization who skipped ${this.skippedDays} days from the course already."
+      `Hi, I'm ${this.name} a ${this.age} year old ${this.gender} from ${this.previousOrganization} who skipped ${this.skippedDays} days from the course already.`
     );
   }
   skipDays(numberOfDays: number) {
