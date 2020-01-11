@@ -16,8 +16,11 @@ export class Aircraft {
   }
   fight() {
     this.ammo = 0;
+    this.baseDamage *= this.ammo;
   }
-  refill() {}
-  getType() {}
-  isPriority() {}
+  refill(ammoAmount: number) {
+    if (ammoAmount > this.maxAmmo) {
+      return ammoAmount - this.maxAmmo;
+    }
+  }
 }
