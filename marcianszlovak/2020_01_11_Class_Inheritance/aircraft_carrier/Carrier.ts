@@ -1,6 +1,4 @@
 import { Aircraft } from "./Aircraft";
-import { F16 } from "./F16";
-import { F35 } from "./F35";
 
 export default class Carrier {
   aircrafts: Aircraft[];
@@ -11,5 +9,17 @@ export default class Carrier {
     this.aircrafts = [];
     this.startingAmmo = startingAmmo;
     this.healthPoints = healthPoints;
+  }
+  add(newPlane: Aircraft): void {
+    this.aircrafts.push(newPlane);
+  }
+  fill() {}
+
+  fight(enemyCarrier: Carrier) {
+    let tDamage: number = 0;
+    this.aircrafts.forEach(newPlane => {
+      tDamage += newPlane.fight();
+    });
+    enemyCarrier.healthPoints -= tDamage;
   }
 }
