@@ -30,8 +30,10 @@ export class Aircraft {
     return this.type;
   }
   getStatus() {
-    return `Type: ${this.type}, Ammo: ${this.currentAmmo}, Base Damage${
-      this.baseDmg
-    }, All Damage${this.currentAmmo * this.baseDmg}`;
+    const infoToString = `Type: ${this.type}, Ammo: ${
+      this.currentAmmo
+    }, Base Damage${this.baseDmg}, All Damage${this.currentAmmo *
+      this.baseDmg}`;
+    return infoToString;
   }
 }
