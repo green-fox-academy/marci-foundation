@@ -12,7 +12,7 @@ export class Person {
     this.gender = gender;
   }
   introduce() {
-    console.log("Hi, I'm ${this.name}, a ${this.age} year old ${this.gender}.");
+    console.log(`Hi, I'm ${this.name}, a ${this.age} year old ${this.gender}.`);
   }
   getGoal() {
     console.log("Live for the moment");
