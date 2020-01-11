@@ -3,17 +3,22 @@ import { Mentor } from "./Mentor";
 
 export class Cohort {
   name: string;
-  students: string[];
-  mentors: string[];
-  constructor(name: string, students: string[], mentors: string[]) {
+  students: Student[];
+  mentors: Mentor[];
+  constructor(name: string) {
     this.name = name;
-    this.students = students;
-    this.mentors = mentors;
+    this.students = [];
+    this.mentors = [];
   }
-  addStudent(name: string) {
-    this.students.push(name);
+  addStudent(student: Student) {
+    this.students.push(student);
   }
-  addMentor(name: string) {
-    this.mentors.push(name);
+  addMentor(mentor: Mentor) {
+    this.mentors.push(mentor);
+  }
+  info() {
+    console.log(
+      "The ${this.name} cohort ${this.students.length} students and ${this.mentors.length} mentors "
+    );
   }
 }
