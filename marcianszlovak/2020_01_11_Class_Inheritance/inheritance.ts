@@ -69,5 +69,5 @@ garage.forEach(currentItem => {
     const bus = currentItem as Bus;
     bus.stop(); // mivel megadtam, hogy bus, ezért elérhető lesz a stop method vagy (element as Bus).stop();
   }
-  currentItem.stop(); // nem elérhetőek a speciális dolgok, tehát a bus-nak a stop method-ja
+  // currentItem.stop();  nem elérhetőek a speciális dolgok, tehát a bus-nak a stop method-ja
 });
