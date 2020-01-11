@@ -1,4 +1,4 @@
-class Person {
+export class Person {
   name: string;
   age: number;
   gender: string;
