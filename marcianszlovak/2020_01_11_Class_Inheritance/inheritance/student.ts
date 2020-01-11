@@ -14,4 +14,9 @@ export class Student extends Person {
     this.previousOrganization = previousOrganization;
     this.skippedDays = skippedDays;
   }
+  getGoal() {
+    console.log("My goal is: to be a junior software developer");
+  }
+  introduce() {}
+  skipDays() {}
 }
