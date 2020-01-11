@@ -29,4 +29,9 @@ export class Aircraft {
   getType() {
     return this.type;
   }
+  getStatus() {
+    return `Type: ${this.type}, Ammo: ${this.currentAmmo}, Base Damage${
+      this.baseDmg
+    }, All Damage${this.currentAmmo * this.baseDmg}`;
+  }
 }
