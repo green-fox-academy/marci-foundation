@@ -5,7 +5,7 @@ export class Aircraft {
   baseDmg: number;
   priority: boolean;
   constructor(
-    type: string,
+    type?: string,
     currentAmmo?: number,
     maxAmmo?: number,
     baseDmg?: number,
