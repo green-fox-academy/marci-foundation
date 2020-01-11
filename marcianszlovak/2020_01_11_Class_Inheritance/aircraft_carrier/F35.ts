@@ -8,4 +8,7 @@ export class F35 extends Aircraft {
   ) {
     super(type, maxAmmo, baseDmg);
   }
+  isPriority(): boolean {
+    return true;
+  }
 }

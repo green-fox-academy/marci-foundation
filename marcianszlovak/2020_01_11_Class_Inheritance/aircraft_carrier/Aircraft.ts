@@ -5,9 +5,9 @@ export class Aircraft {
   baseDmg: number;
   constructor(
     type: string,
-    currentAmmo: number,
-    maxAmmo: number,
-    baseDmg: number
+    currentAmmo?: number,
+    maxAmmo?: number,
+    baseDmg?: number
   ) {
     this.type = type;
     this.currentAmmo = currentAmmo;
