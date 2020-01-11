@@ -1,26 +1,32 @@
 export class Aircraft {
-  ammo: number;
-  damage: number;
+  type: string;
+  currentAmmo: number;
   maxAmmo: number;
-  baseDamage: number;
+  baseDmg: number;
   constructor(
-    ammo: number = 0,
-    damage: number = 0,
+    type: string,
+    currentAmmo: number,
     maxAmmo: number,
-    baseDamage: number
+    baseDmg: number
   ) {
-    this.ammo = ammo;
-    this.damage = damage;
+    this.type = type;
+    this.currentAmmo = currentAmmo;
     this.maxAmmo = maxAmmo;
-    this.baseDamage = baseDamage;
+    this.baseDmg = baseDmg;
   }
   fight() {
-    this.ammo = 0;
-    this.baseDamage *= this.ammo;
+    this.currentAmmo = 0;
+    return this.baseDmg * this.currentAmmo;
   }
-  refill(ammoAmount: number) {
-    if (ammoAmount > this.maxAmmo) {
-      return ammoAmount - this.maxAmmo;
+  refill(refillAmmo: number) {
+    if (refillAmmo > this.maxAmmo) {
+    } else {
+      let shells = this.maxAmmo - this.currentAmmo;
+      this.currentAmmo = this.maxAmmo;
+      return refillAmmo - shells;
     }
+  }
+  getType() {
+    return this.type;
   }
 }
