@@ -19,7 +19,9 @@ export class Aircraft {
     return this.baseDmg * this.currentAmmo;
   }
   refill(refillAmmo: number) {
-    if (refillAmmo > this.maxAmmo) {
+    if (refillAmmo < this.maxAmmo - this.currentAmmo) {
+      this.currentAmmo += refillAmmo;
+      return 0;
     } else {
       let shells = this.maxAmmo - this.currentAmmo;
       this.currentAmmo = this.maxAmmo;
