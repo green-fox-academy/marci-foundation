@@ -13,9 +13,20 @@ export default class Carrier {
   add(newPlane: Aircraft): void {
     this.aircrafts.push(newPlane);
   }
-  fill() {}
 
-  fight(enemyCarrier: Carrier) {
+  fill(isPriority: boolean) {
+    this.aircrafts.forEach(currentItem => {
+      if (currentItem.priority === isPriority) {
+        if (this.startingAmmo < currentItem.maxAmmo - currentItem.currentAmmo) {
+        } else {
+          this.startingAmmo -= currentItem.maxAmmo - currentItem.currentAmmo;
+          currentItem.currentAmmo = currentItem.maxAmmo;
+        }
+      }
+    });
+  }
+
+  fight(enemyCarrier: Carrier): void {
     let tDamage: number = 0;
     this.aircrafts.forEach(newPlane => {
       tDamage += newPlane.fight();

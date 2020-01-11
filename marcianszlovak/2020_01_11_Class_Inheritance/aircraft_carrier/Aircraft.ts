@@ -25,14 +25,9 @@ export class Aircraft {
   }
 
   refill(refillAmmo: number) {
-    let ammoToRefill: number = this.maxAmmo - this.currentAmmo;
-    if (refillAmmo <= ammoToRefill) {
-      this.currentAmmo += refillAmmo;
-      return 0;
-    } else {
-      this.currentAmmo = this.maxAmmo;
-      return refillAmmo - ammoToRefill;
-    }
+    const reloadedAmmo = Math.min(this.maxAmmo - this.currentAmmo, refillAmmo);
+    this.currentAmmo += reloadedAmmo;
+    return refillAmmo - reloadedAmmo;
   }
 
   getType() {
