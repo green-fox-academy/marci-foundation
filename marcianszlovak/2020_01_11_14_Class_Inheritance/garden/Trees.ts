@@ -1,6 +1,6 @@
-import { Plants } from "./Plants";
+import Plants from "./Plants";
 
-export class Trees extends Plants {
+export default class Trees extends Plants {
   constructor(currentWaterLevel: number, color: string) {
     super(currentWaterLevel, color);
     this.needWater = 10;
