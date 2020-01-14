@@ -19,7 +19,7 @@ export class Plants {
       (this.color = color);
   }
   isWaterNeeded() {
-    if (this.currentWaterLevel > this.needWater) {
+    if (this.currentWaterLevel < this.needWater) {
       // needs more water
     } else {
       // doesn't need more water
