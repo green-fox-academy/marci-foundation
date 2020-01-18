@@ -7,17 +7,13 @@ export default class Todo implements Printable {
   priority: string;
   isDone: boolean;
 
-  constructor(
-    task: string = "Task: Buy milk",
-    priority: string = "Priority: high",
-    isDone: boolean = true
-  ) {
+  constructor(task: string, priority: string, done: boolean) {
     this.task = task;
     this.priority = priority;
-    this.isDone = isDone;
+    this.isDone = done;
   }
 
   printAllFields(): string {
-    return this.task + this.priority + this.isDone;
+    return `Task: ${this.task}  Priority: ${this.priority}  Done: ${this.isDone}`;
   }
 }

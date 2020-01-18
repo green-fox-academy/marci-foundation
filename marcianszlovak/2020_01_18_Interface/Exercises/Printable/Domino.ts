@@ -3,18 +3,15 @@
 import Printable from "./Printable";
 
 export default class Domino implements Printable {
-  frontSide: string;
-  backSide: string;
+  frontSide: number;
+  backSide: number;
 
-  constructor(
-    frontSide: string = "Domino A side: 3",
-    backSide: string = "B side: 2"
-  ) {
-    this.frontSide = frontSide;
-    this.backSide = backSide;
+  constructor() {
+    this.frontSide = Math.floor(Math.random() * 10);
+    this.backSide = Math.floor(Math.random() * 10);
   }
 
   printAllFields(): string {
-    return this.frontSide + this.backSide;
+    return `Domino A side: ${this.frontSide}, B side: ${this.backSide}`;
   }
 }
