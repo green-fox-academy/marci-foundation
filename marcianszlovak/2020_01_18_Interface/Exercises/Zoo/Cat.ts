@@ -17,11 +17,11 @@ export default class Cat extends Animals {
   }
 
   breed(): string {
-    return "Like most mammals";
+    return "like most mammals";
   }
 
   eat(): string {
-    return "All the food";
+    return "all the food";
   }
 
   voice() {

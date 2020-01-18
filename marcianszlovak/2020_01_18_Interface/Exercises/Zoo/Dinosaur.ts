@@ -15,7 +15,7 @@ export default class Dinosaur extends Animals {
   }
 
   breed(): string {
-    return "Like on the Discovery Channel";
+    return "like on the Discovery Channel";
   }
 
   eat(): string {
