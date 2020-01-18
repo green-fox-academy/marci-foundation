@@ -2,10 +2,10 @@ import Plants from "./Plants";
 import Flowers from "./Flowers";
 import Trees from "./Trees";
 export default class Garden {
-  plants: Plants[];
+  private plants: Plants[];
 
   addPlants() {
-    this.plants.push(new Flowers(0, "Yellow"));
+    this.plants.push(new Flowers(0, "Yellow")); // add a yellow flower with 0 currentWaterLevel
     this.plants.push(new Flowers(0, "Blue"));
     this.plants.push(new Trees(0, "Purple"));
     this.plants.push(new Trees(0, "Orange"));
@@ -27,23 +27,23 @@ export default class Garden {
     });
 
     if (plantsThatNeedWater != 0) {
-      this.plants.forEach((currentItem: Plants) => {
-        if (currentItem.plantNeedsWater()) {
-          currentItem.wateringPlants(water / plantsThatNeedWater);
+      this.plants.forEach((plants: Plants) => {
+        if (plants.plantNeedsWater()) {
+          plants.wateringPlants(water / plantsThatNeedWater);
         }
       });
     }
   }
 
   waterLevels() {
-    this.plants.forEach((currentItem: Plants) => {
-      if (currentItem.plantNeedsWater()) {
+    this.plants.forEach((plants: Plants) => {
+      if (plants.plantNeedsWater()) {
         console.log(
-          `The ${currentItem.color} ${currentItem.constructor.name} needs water`
+          `The ${plants.color} ${plants.constructor.name} needs water`
         );
       } else {
         console.log(
-          `The ${currentItem.color} ${currentItem.constructor.name} doesn't need water`
+          `The ${plants.color} ${plants.constructor.name} doesn't need water`
         );
       }
     });

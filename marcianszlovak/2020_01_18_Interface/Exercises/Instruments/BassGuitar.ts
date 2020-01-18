@@ -1,3 +1,5 @@
+"use strict";
+
 import StringedInstrument from "./StringedInstrument";
 
 export default class BassGuitar extends StringedInstrument {

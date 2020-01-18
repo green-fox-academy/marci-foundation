@@ -1,3 +1,5 @@
+"use strict";
+
 export default abstract class Instrument {
   private name: string;
 

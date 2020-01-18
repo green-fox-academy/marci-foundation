@@ -1,3 +1,5 @@
+"use strict";
+
 import Animals from "./Animals";
 
 export default class Cat extends Animals {

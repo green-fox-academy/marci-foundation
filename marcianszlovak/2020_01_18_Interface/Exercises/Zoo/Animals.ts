@@ -1,3 +1,5 @@
+"use strict";
+
 export default abstract class Animals {
   name: string;
   age: number;

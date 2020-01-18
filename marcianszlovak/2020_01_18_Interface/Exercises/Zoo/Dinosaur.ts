@@ -1,4 +1,7 @@
+"use strict";
+
 import Animals from "./Animals";
+
 export default class Dinosaur extends Animals {
   extinct: boolean;
   eyeColor: string;

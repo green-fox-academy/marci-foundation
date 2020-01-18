@@ -1,4 +1,7 @@
+"use strict";
+
 import Animals from "./Animals";
+
 export default class KoalaBear extends Animals {
   nativeCountry: string;
   herbivorous: boolean;
