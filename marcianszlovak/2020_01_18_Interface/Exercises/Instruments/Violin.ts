@@ -1,8 +1,8 @@
 import StringedInstrument from "./StringedInstrument";
 
 export default class Violin extends StringedInstrument {
-  constructor() {
-    super("Violin", "4 strings");
+  constructor(numberOfStrings: number = 4) {
+    super("Violin", numberOfStrings);
   }
 
   sound() {

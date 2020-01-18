@@ -1,10 +1,10 @@
 import Instrument from "./Instrument";
 
 export default abstract class StringedInstrument extends Instrument {
-  numberOfStrings: string;
+  numberOfStrings: number;
 
-  constructor(name: string, numberOfStrings: string) {
-    super("");
+  constructor(name: string, numberOfStrings: number) {
+    super(name);
     this.numberOfStrings = numberOfStrings;
   }
 

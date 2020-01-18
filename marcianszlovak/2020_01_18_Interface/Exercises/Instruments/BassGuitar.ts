@@ -1,8 +1,8 @@
 import StringedInstrument from "./StringedInstrument";
 
 export default class BassGuitar extends StringedInstrument {
-  constructor() {
-    super("BassGuitar", "4 strings");
+  constructor(numberOfStrings: number = 4) {
+    super("Bass Guitar", numberOfStrings);
   }
 
   sound() {
