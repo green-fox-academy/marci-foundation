@@ -1,4 +1,4 @@
-export abstract class Instrument {
+export default abstract class Instrument {
   name: string;
   constructor(name: string) {
     this.name = name;

@@ -1,6 +1,6 @@
 import { Instrument } from "./Instrument";
 
-export abstract class StringedInstrument extends Instrument {
+export default abstract class StringedInstrument extends Instrument {
   numberOfStrings: string;
 
   constructor(name: string, numberOfStrings: string) {
