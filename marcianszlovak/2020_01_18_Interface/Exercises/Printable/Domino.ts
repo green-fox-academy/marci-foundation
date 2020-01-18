@@ -1,10 +1,15 @@
 "use strict";
 
-export default class Domino {
-  frontSide: number;
-  backSide: number;
+import Printable from "./Printable";
 
-  constructor(frontSide: number, backSide: number) {
+export default class Domino implements Printable {
+  frontSide: string;
+  backSide: string;
+
+  constructor(
+    frontSide: string = "Domino A side: 3",
+    backSide: string = "B side: 2"
+  ) {
     this.frontSide = frontSide;
     this.backSide = backSide;
   }

@@ -1,6 +1,8 @@
 "use strict";
 
-export default class Todo {
+import Printable from "./Printable";
+
+export default class Todo implements Printable {
   task: string;
   priority: string;
   isDone: boolean;
