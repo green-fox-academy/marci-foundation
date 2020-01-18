@@ -1,7 +1,7 @@
 import Instrument from "./Instrument";
 
 export default abstract class StringedInstrument extends Instrument {
-  numberOfStrings: number;
+  private numberOfStrings: number;
 
   constructor(name: string, numberOfStrings: number) {
     super(name);
