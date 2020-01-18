@@ -6,7 +6,6 @@ const randomCharacters: string[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(
   ""
 );
 const days: string[] = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
-// const codeLength = 8;
 
 export default class Reservation implements Reservationy {
   private code: string;
@@ -14,10 +13,12 @@ export default class Reservation implements Reservationy {
 
   constructor() {
     this.code = "";
+
+    for (let index = 0; index < 8; index++) {
+      this.code += randomCharacters[Math.floor(Math.random() * days.length)];
+    }
+
     this.dow = days[Math.floor(Math.random() * days.length)];
-    randomCharacters.forEach((currentItem, index) => {
-      this.code += [Math.floor(Math.random() * randomCharacters.length)];
-    });
   }
 
   getCodeBooking(): string {
