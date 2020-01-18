@@ -15,7 +15,7 @@ export default class Reservation implements Reservationy {
   constructor() {
     this.code = "";
     this.dow = days[Math.floor(Math.random() * days.length)];
-    randomCharacters.forEach(randomCharacters => {
+    randomCharacters.forEach((currentItem, index) => {
       this.code += [Math.floor(Math.random() * randomCharacters.length)];
     });
   }
@@ -31,4 +31,4 @@ export default class Reservation implements Reservationy {
 
 let asd = new Reservation();
 
-console.log(asd.getCodeBooking() + asd.getDowBooking);
+console.log(asd.getCodeBooking() + asd.getDowBooking());
