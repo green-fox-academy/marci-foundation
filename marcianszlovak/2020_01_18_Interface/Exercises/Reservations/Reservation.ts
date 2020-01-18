@@ -15,14 +15,15 @@ export default class Reservation implements Reservationy {
     this.code = "";
 
     for (let index = 0; index < 8; index++) {
-      this.code += randomCharacters[Math.floor(Math.random() * days.length)];
+      this.code +=
+        randomCharacters[Math.floor(Math.random() * randomCharacters.length)];
     }
 
     this.dow = days[Math.floor(Math.random() * days.length)];
   }
 
   getCodeBooking(): string {
-    return `Booking# ${this.code}  `;
+    return `Booking# ${this.code} `;
   }
 
   getDowBooking(): string {
