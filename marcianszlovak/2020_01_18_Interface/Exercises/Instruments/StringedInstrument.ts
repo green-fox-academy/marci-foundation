@@ -1,4 +1,4 @@
-import { Instrument } from "./Instrument";
+import Instrument from "./Instrument";
 
 export default abstract class StringedInstrument extends Instrument {
   numberOfStrings: string;
@@ -8,5 +8,13 @@ export default abstract class StringedInstrument extends Instrument {
     this.numberOfStrings = numberOfStrings;
   }
 
-  sound() {}
+  abstract sound(): void;
+
+  play(): void {
+    console.log(
+      `${this.instrumentName()}, a ${
+        this.numberOfStrings
+      }-stringed instrument that goes ${this.sound()}\n`
+    );
+  }
 }

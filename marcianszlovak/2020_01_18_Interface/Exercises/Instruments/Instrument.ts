@@ -4,5 +4,9 @@ export default abstract class Instrument {
     this.name = name;
   }
 
-  play() {}
+  abstract play(): void;
+
+  instrumentName() {
+    return this.name;
+  }
 }
