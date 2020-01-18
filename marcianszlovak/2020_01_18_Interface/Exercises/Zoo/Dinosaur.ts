@@ -10,7 +10,15 @@ export default class Dinosaur extends Animals {
     eyeColor: string = "blue"
   ) {
     super(name, age, legs);
-    this.extinct = this.extinct;
-    this.eyeColor = this.eyeColor;
+    this.extinct = extinct;
+    this.eyeColor = eyeColor;
+  }
+
+  breed(): string {
+    return "Like on the Discovery Channel";
+  }
+
+  eat(): string {
+    return "other dinosaurs";
   }
 }
