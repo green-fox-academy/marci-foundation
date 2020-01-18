@@ -1,6 +1,6 @@
-import Animal from "./Animal";
+import Animals from "./Animals";
 
-export default class Cat extends Animal {
+export default class Cat extends Animals {
   cuteOrNot: boolean;
   colorOfFur: string;
 
