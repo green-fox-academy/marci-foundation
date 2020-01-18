@@ -13,4 +13,8 @@ export default class Domino implements Printable {
     this.frontSide = frontSide;
     this.backSide = backSide;
   }
+
+  printAllFields(): string {
+    return this.frontSide + this.backSide;
+  }
 }

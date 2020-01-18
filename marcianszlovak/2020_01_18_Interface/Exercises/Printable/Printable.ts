@@ -1,5 +1,5 @@
 "use strict";
 
 export default interface Printable {
-  printAllFields(): string;
+  printAllFields(): void;
 }
