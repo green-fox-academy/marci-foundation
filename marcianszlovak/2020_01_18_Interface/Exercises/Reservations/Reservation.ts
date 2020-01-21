@@ -1,13 +1,14 @@
 "use strict";
 
 import Reservationy from "./Reservationy";
+import addReservation from "./ReservationList";
 
 const randomCharacters: string[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(
   ""
 );
 const days: string[] = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
-export default class Reservation implements Reservationy {
+export default class Reservation implements Reservation {
   private code: string;
   private dow: string;
 
