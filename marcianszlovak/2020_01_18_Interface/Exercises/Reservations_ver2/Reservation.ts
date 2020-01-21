@@ -13,6 +13,7 @@ export default class Reservation implements Reservationy {
   ) {
     this.dow = dow;
     this.code = code;
+
     for (let index = this.dow.length - 1; index > 0; index--) {
       const randomDow = Math.floor(Math.random() * (index + 1));
       [this.dow[index], this.dow[randomDow]] = [
@@ -20,6 +21,7 @@ export default class Reservation implements Reservationy {
         this.dow[index]
       ];
     }
+
     for (let index = this.code.length - 1; index > 0; index--) {
       const randomCode = Math.floor(Math.random() * (index + 1));
       [this.code[index], this.code[randomCode]] = [
