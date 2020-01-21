@@ -14,7 +14,7 @@ function multipleLines(path: string, word: string, number: number) {
     let line: string = "";
 
     for (let i: number = 0; number > i; i++) {
-      line = line + (word + "\n");
+      line += word + "\n";
     }
 
     fs.writeFileSync(path, line, "utf8");
