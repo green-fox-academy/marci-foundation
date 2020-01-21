@@ -15,11 +15,10 @@ function fileCont(fileName: string) {
 
 try {
   fileCont("./my-file.txt");
-   //throw "My error";
+  //throw "My error";
 } catch (error) {
-   //console.log(MY_ERROR_MESSAGE);
+  //console.log(MY_ERROR_MESSAGE);
   console.log(error.message);
-  }
-
+}
 
 export {};

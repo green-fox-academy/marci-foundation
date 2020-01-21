@@ -7,6 +7,7 @@ function reversedOrder(content: string): string {
 
   for (let index: number = 0; index < newArr.length; index++) {
     newStr += newArr[newArr.length - 1 - index] + "\n";
+    //newStr = newStr + newArr[newArr.length - 1 - index] + "\n";
   }
   return newStr;
 }
