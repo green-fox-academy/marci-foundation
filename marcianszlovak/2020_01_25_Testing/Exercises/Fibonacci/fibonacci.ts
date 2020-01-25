@@ -1,6 +1,6 @@
 "use strict";
 
-export default function fibonacci(a: number) {
+export default function fibonacci(a: number): number {
   if (a < 2) {
     return a;
   }

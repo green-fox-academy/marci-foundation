@@ -4,8 +4,8 @@ import fibonacci from "./fibonacci";
 import test from "tape";
 
 test("testing the fibonacci sequence", t => {
-  const actual = fibonacci(4);
-  const expected = 9;
+  const actual = fibonacci(10); // 11th element of the fibonacci sequence
+  const expected = 55;
 
   t.equal(actual, expected);
   t.end();
