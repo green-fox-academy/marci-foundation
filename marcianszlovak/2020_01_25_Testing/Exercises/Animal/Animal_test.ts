@@ -14,4 +14,12 @@ test("someone is eating, drinking...", t => {
   t.end();
 });
 
-test("someone is playing, I wonder who...", t => {});
+test("someone is playing, I wonder who...", t => {
+  const animal = new Animal();
+
+  animal.play();
+
+  t.equal(animal.hunger, 51, "playing with his food");
+  t.equal(animal.hunger, 51, "playing with his water");
+  t.end();
+});
