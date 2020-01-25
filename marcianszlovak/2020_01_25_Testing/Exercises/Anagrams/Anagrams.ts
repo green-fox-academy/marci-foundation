@@ -1,3 +1,5 @@
+"use strict";
+
 export default function Anagrams(a: string, b: string) {
   if (!a || !b || a.length !== b.length) {
     return false;
