@@ -1,6 +1,6 @@
 "use strict";
 
-import Sharpie from "../../../2019_12_14_Classes/class exercises/Sharpie";
+import Sharpie from "../../../2019_12_14_Classes/Exercises/Sharpie";
 import test from "tape";
 
 test("sharpie type", t => {
