@@ -5,6 +5,7 @@ import test from "tape";
 
 test("using sharpie", t => {
   const operations = new Sharpie("green", 770);
-  let actual = ;
-  let expected = 
+  operations.use();
+  t.equal(operations.inkAmount, 769);
+  t.end();
 });
