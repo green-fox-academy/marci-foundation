@@ -14,7 +14,7 @@ export default class Apples {
   /**
    * getApple
    */
-  public getApple(a: string) {
-    return a;
+  public getApple() {
+    return "apple";
   }
 }
