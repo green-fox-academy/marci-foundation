@@ -9,18 +9,15 @@ which decreases inkAmount */
 export default class Sharpie {
   color: string;
   width: number;
-  inkAmount: number;
-  constructor(color: string, width: number, inkAmount: number = 100) {
+  inkAmount: number = 100;
+  constructor(color: string, width: number) {
     this.color = color;
     this.width = width;
-    this.inkAmount = inkAmount;
   }
 
   public use() {
-    this.inkAmount--;
+    if (this.inkAmount >= 1) {
+      this.inkAmount--;
+    }
   }
 }
-
-let newSharpie = new Sharpie("green", 540);
-newSharpie.use();
-console.log(newSharpie);
