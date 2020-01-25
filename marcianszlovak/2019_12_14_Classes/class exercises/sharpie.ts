@@ -6,7 +6,7 @@ Every sharpie is created with a default 100 as inkAmount
 We can use() the sharpie objects
 which decreases inkAmount */
 
-class sharpie {
+export default class Sharpie {
   color: string;
   width: number;
   inkAmount: number;
@@ -21,6 +21,6 @@ class sharpie {
   }
 }
 
-let newSharpie = new sharpie("green", 540);
+let newSharpie = new Sharpie("green", 540);
 newSharpie.use();
 console.log(newSharpie);
