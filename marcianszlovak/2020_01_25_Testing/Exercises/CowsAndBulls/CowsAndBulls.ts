@@ -1,5 +1,7 @@
 "use strict";
 
+import { randomGuesser } from "./randomGuesser";
+
 export default class CowsAndBulls {
   public gameNumber: number;
   public gameState: string;
@@ -28,5 +30,24 @@ export default class CowsAndBulls {
 
   getGameCounter(): number {
     return this.gameCounter;
+  }
+
+  target(inputNumber: number) {
+    this.gameNumber = inputNumber;
+  }
+
+  takeGuess(inputNumber: number): string {
+    if (this.gameState === "finished") {
+      return "the end";
+    } else {
+      this.gameCounter++;
+
+      let res: string = randomGuesser(inputNumber, this.gameNumber);
+
+      if ((res = "4 cows")) {
+        this.gameState = "finished";
+      }
+      return res;
+    }
   }
 }
