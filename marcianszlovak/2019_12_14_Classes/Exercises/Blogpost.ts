@@ -1,4 +1,4 @@
-class blogPost {
+class BlogPost {
   authorname: string;
   text: string;
   publicationDate: string;
@@ -9,7 +9,7 @@ class blogPost {
   }
 }
 
-const blog1 = new blogPost(
+const blog1 = new BlogPost(
   "John Doe",
   "Lorem ipsum dolor sit amet",
   "2000.05.04"

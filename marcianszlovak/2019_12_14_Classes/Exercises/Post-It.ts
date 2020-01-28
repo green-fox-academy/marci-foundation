@@ -1,4 +1,4 @@
-export class postIt {
+export class PostIt {
   backgroundColor: string;
   text: string;
   textColor: string;
@@ -10,6 +10,6 @@ export class postIt {
   }
 }
 
-const post1 = new postIt("orange", "blue", "Idea1");
-const post2 = new postIt("pink", "black", "Awesome");
-const post3 = new postIt("yellow", "green", "Supoyb");
+const post1 = new PostIt("orange", "blue", "Idea1");
+const post2 = new PostIt("pink", "black", "Awesome");
+const post3 = new PostIt("yellow", "green", "Supoyb");
