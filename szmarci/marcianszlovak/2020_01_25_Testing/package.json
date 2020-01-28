@@ -1,0 +1,15 @@
+{
+  "name": "2020_01_25_testing",
+  "version": "1.0.0",
+  "description": "testing greenfox exercises",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node tests.ts"
+  },
+  "author": "Szlovák Marcián",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/tape": "^4.2.33",
+    "tape": "^4.13.0"
+  }
+}
